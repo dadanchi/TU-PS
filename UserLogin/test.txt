@@ -1,0 +1,12 @@
+﻿05/03/2019 00:12:42;;ANONYMOUS;Login successful
+05/03/2019 00:13:11;Admin;ADMIN;Validation date changed for user Student1
+05/03/2019 00:14:32;;ANONYMOUS;Login successful
+05/03/2019 00:15:12;Admin;ADMIN;Role changed for user Student1
+05/03/2019 00:16:01;;ANONYMOUS;Login successful
+05/03/2019 00:16:36;Admin;ADMIN;Validation date changed for user Student1
+05/03/2019 00:21:44;;ANONYMOUS;Login successful
+05/03/2019 00:21:54;Admin;ADMIN;Validation date changed for user Student1
+05/03/2019 00:25:27;;ANONYMOUS;Login successful
+05/03/2019 00:25:41;Admin;ADMIN;Role changed for user Student1
+05/03/2019 00:30:16;;ANONYMOUS;Login successful
+05/03/2019 00:32:04;;ANONYMOUS;Login successful
