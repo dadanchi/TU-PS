@@ -10,6 +10,15 @@ namespace StudentRepository
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter faculty number");
+            string fn = Console.ReadLine();
+
+            if (StudentData.IsThereStudent(fn))
+            {
+                Student student = StudentData.TestStudent.Where(s => s.FacultyNumber == fn).First();
+                string certificate = StudentData.PrepareCertificate(student);
+                StudentData.SaveCertificate(certificate, student.Firstname + " " + student.Lastname + " " + student.FacultyNumber + ".txt");
+            }
         }
     }
 }
