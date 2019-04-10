@@ -15,7 +15,7 @@ namespace StudentRepository
 
             if (StudentData.IsThereStudent(fn))
             {
-                Student student = StudentData.TestStudent.Where(s => s.FacultyNumber == fn).First();
+                Student student = StudentData.TestStudents.Where(s => s.FacultyNumber == fn).First();
                 string certificate = StudentData.PrepareCertificate(student);
                 StudentData.SaveCertificate(certificate, student.Firstname + " " + student.Lastname + " " + student.FacultyNumber + ".txt");
             }

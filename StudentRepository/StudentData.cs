@@ -11,7 +11,7 @@ namespace StudentRepository
     {
         private static List<Student> testStudents = new List<Student>();
 
-        public static List<Student> TestStudent
+        public static List<Student> TestStudents
         {
             get
             {
@@ -45,7 +45,7 @@ namespace StudentRepository
 
         public static bool IsThereStudent(string facultyNumber)
         {
-            return (from s in TestStudent
+            return (from s in TestStudents
                     where s.FacultyNumber.Equals(facultyNumber)
                     select s).ToList().Count > 0;
         }
