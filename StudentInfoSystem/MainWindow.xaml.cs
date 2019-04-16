@@ -21,14 +21,35 @@ namespace StudentInfoSystem
     /// </summary>
     public partial class MainForm : Window
     {
-        public MainForm()
+        private string userFn;
+
+        public MainForm(string userFn)
         {
             InitializeComponent();
+
+            this.userFn = userFn;
+            LoadUser();
         }
 
         private void TxtName_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void LoadUser()
+        {
+            Student student = StudentData.TestStudents.Where(u => u.FacultyNumber == userFn).FirstOrDefault();
+            txtFirstName.Text = student.Firstname;
+            txtSecondName.Text = student.Middlename;
+            txtLastName.Text = student.Lastname;
+            txtGroup.Text = student.Group;
+            txtFaculty.Text = student.Faculty;
+            txtFacultyNumber.Text = student.FacultyNumber;
+            txtSpeciality.Text = student.Specialty;
+            txtStream.Text = student.Stream;
+            txtOks.Text = student.EducationLevel;
+            txtStatus.Text = student.Status;
+            txtCourse.Text = student.Course;
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)

@@ -53,7 +53,7 @@ namespace StudentRepository
         private static void ResetTestUser()
         {
             testStudents.Add(new Student("Student1", "Student1", "Student1", "FKST", "KSI", "bakalavar",
-                "student", "1212", "1", "3", "50", DateTime.MaxValue, DateTime.MaxValue));
+                "student", "123457", "1", "3", "50", DateTime.MaxValue, DateTime.MaxValue));
             testStudents.Add(new Student("Student2", "Student2", "Student2", "FKST", "KSI", "bakalavar",
                 "student", "1213", "1", "3", "50", DateTime.MaxValue, DateTime.MaxValue));
         }

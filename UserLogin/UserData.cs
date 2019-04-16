@@ -58,7 +58,7 @@ namespace UserLogin
             testUsers.Clear();
 
             testUsers.Add(new User("Admin", "Admin123", "123456", 1));
-            testUsers.Add(new User("Student1", "Student1", "123457", (int)UserRoles.STUDENT));
+            testUsers.Add(new User("Student1", "123457", "123457", (int)UserRoles.STUDENT));
             testUsers.Add(new User("Student2", "Student2", "123458", (int)UserRoles.STUDENT));
 
             foreach (var user in testUsers)
